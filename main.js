@@ -10,6 +10,7 @@ function slider_Arrow(){
     var arrow_Right_Carousel = $(".fa-angle-right");
     var arrow_Left_Carousel = $(".fa-angle-left");
     var img = $("img");
+    var circle = $(".fa-circle");
 
     arrow_Right_Carousel.click( function () {
 
@@ -21,6 +22,10 @@ function slider_Arrow(){
 
                 $(img[i]).removeClass("active");
                 $(img[i]).next().addClass("active");
+
+                $(circle[i]).removeClass("active");
+                $(circle[i]).next().addClass("active");
+
                 i = img.length;
             }
             console.log(img[i]);
@@ -37,6 +42,10 @@ function slider_Arrow(){
 
                 $(img[i]).removeClass("active");
                 $(img[i]).prev().addClass("active");
+
+                $(circle[i]).removeClass("active");
+                $(circle[i]).prev().addClass("active");
+
                 i = img.length;
             }
             console.log(img[i]);
